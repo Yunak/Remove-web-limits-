@@ -3,19 +3,14 @@
 
 // @name              网页限制解除(改)
 // @name:en           Remove web limits(modified)
-// @name:zh           网页限制解除(改)
 // @name:zh-CN        网页限制解除(改)
-// @name:ja           ウェブの規制緩和(変更)
 
-// @author            Cat73 & iqxin(修改) 
+// @author            Cat73 & iqxin & yunak(修改) 
 // @contributor       iqxin
 
-// @description       通杀大部分网站,可以解除禁止复制、剪切、选择文本、右键菜单的限制。原作者cat73,因为和搜索跳转脚本冲突,遂进行了改动。
+// @description       解除启嘉网禁止复制、剪切、选择文本、右键菜单、F12的限制，通杀大部分网站如有需要可以向data里添加。原作者cat73,因为需要,遂进行了改动。
 // @description:en    Pass to kill most of the site, you can lift the restrictions prohibited to copy, cut, select the text, right-click menu.revised version
-// @description:zh    通杀大部分网站,可以解除禁止复制、剪切、选择文本、右键菜单的限制。原作者cat73,因为和搜索跳转脚本冲突,遂进行了改动
-// @description:zh-CN 通杀大部分网站,可以解除禁止复制、剪切、选择文本、右键菜单的限制。原作者cat73,因为和搜索跳转脚本冲突,遂进行了改动
-// @description:zh-TW 通殺大部分網站,可以解除禁止復制、剪切、選擇文本、右鍵菜單的限制。
-// @description:ja    サイトのほとんどを殺すために渡し、あなたは、コピー切り取り、テキスト、右クリックメニューを選択することは禁止の制限を解除することができます。
+// @description:zh-CN 解除启嘉网禁止复制、剪切、选择文本、右键菜单、F12的限制，通杀大部分网站如有需要可以向data里添加。原作者cat73,因为需要,遂进行了改动。
 
 // @description       原作者https://www.github.com/Cat7373/,因为和搜索跳转脚本冲突,遂进行了改动
 // @homepageURL       https://cat7373.github.io/remove-web-limits/
@@ -23,7 +18,7 @@
 
 // @icon               data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAABpElEQVR4nO3Vv2uUQRDG8c/ebSMWqay0trATAxrUSi1S2AiWFoJYpNCgoBjURsHWJKeNRfAvsDgFixQqKdPZ2ViEiCJYBOQu8f1hEXO59713j7MUfLZ6d2a/O8vMO0OzDnin9Ku2Mjvuaw07xgSAYEVXe2indMhj92zpKJLnBhF8MDeye9hn6zbN70eRiqCw02Bra3up8BBLu1FEBxsBucXqW4csz0ULe4jorSCMuPU89boRELDMHiI6Y8V65bbCUTccc70RkaOwKLOg0IkyXa9qTjOu2LAs6NZuD86hrdTyxRNTkUqqdhXlHrngGRVEZsMpJwex9DxIZSHYclesIb65LCoHgIs66UJq6btDBZHZrPh8V6YBOX66LbOkTGckBYimBW2FVTNeuOZNyrFJ236Yl4NSy5SbVm1PDvhodqgyMledTdRlAtDzqfL9tfkwUtyaRkv9LwFj9B/w7wPycXOhqlJ0yZHKPChMi5MCiM47XhsopbVJAUHfrYbmN/EToN+02eLPfz9OYyZhFJzW1Jn3lTsxaKQjCkp52jy45r1ZvSbTb9M0d4PBozGZAAAAAElFTkSuQmCC
 
-// @version           4.3.4
+// @version           4.3.5
 // @license           LGPLv3
 
 // @compatible        chrome Chrome_46.0.2490.86 + TamperMonkey + 脚本_1.3 测试通过
@@ -132,7 +127,8 @@
             "www.pigai.org",
             "www.shangc.net",
             "www.myhtlmebook.com",
-            "www.sdifen.com"
+            "www.sdifen.com",
+            "www.change.tm"
         ]
     }
 
@@ -194,7 +190,7 @@
     // // ------------------------------函数 func
 
     function qxinStart(){
-        console.log("脚本: 复制限制解除(改) --- 开始执行 --- 发布者: qxin --- GitHub: https://github.com/qxinGitHub/Remove-web-limits-");
+        console.log("脚本: 复制限制解除(改) --- 开始执行 --- 发布者: yunak --- GitHub: https://github.com/Yunak/Remove-web-limits-");
         addDragEven();
         setBtnClick();
 
